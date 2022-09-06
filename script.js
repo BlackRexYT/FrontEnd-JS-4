@@ -42,3 +42,19 @@
 //     {id:3, price:500}
 // ])
 // )
+
+
+/* 4 */
+
+
+// L1
+console.log('Sync 1')
+
+// L2
+setTimeout(_ => console.log('to 2'), 0)
+
+// L3
+console.log('sync 3')
+
+// L4
+setTimeout(_ => console.log('to 4'), 0)
