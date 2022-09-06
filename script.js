@@ -76,7 +76,13 @@
 /* 6 */
 
 async function postsbyUser(userID){
-    const result = await fetch('https://jsonplaceholder.typicode.com/posts')
+    const promise = await fetch('https://jsonplaceholder.typicode.com/posts')
+
+    const result = await promise.json()
+
+    const posts = result.filter(elem => elem.userId === userID)
+
+    console.log(posts)
 }
 
 postsbyUser(4)
