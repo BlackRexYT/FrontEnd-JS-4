@@ -73,17 +73,31 @@
 // console.log('person4: shows ticket')
 // console.log('person5: shows ticket')
 
+
 /* 6 */
 
-async function postsbyUser(userID){
-    const promise = await fetch('https://jsonplaceholder.typicode.com/posts')
 
+// async function postsbyUser(userID){
+//     const promise = await fetch('https://jsonplaceholder.typicode.com/posts')
+
+//     const result = await promise.json()
+
+//     const posts = result.filter(elem => elem.userId === userID)
+
+//     console.log(posts)
+// }
+
+// postsbyUser(4)
+
+
+async function firstSixIncomplete(){
+    const promise = await fetch('https://jsonplaceholder.typicode.com/todos')
+    
     const result = await promise.json()
 
-    const posts = result.filter(elem => elem.userId === userID)
+    const todos = result.filter(elem => elem.completed === false).slice(0,6)
 
-    console.log(posts)
+    console.log(todos)
 }
 
-postsbyUser(4)
-    
+firstSixIncomplete()
