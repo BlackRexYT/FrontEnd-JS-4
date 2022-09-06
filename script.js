@@ -76,7 +76,9 @@
 /* 6 */
 
 function postsbyUser(userID){
-    console.log(userID)
+    fetch('https://jsonplaceholder.typicode.com/posts')
+        .then(res => {console.log(res),console.log(userID)})
 }
-postsByUser(4)
+
+postsbyUser(4)
     
