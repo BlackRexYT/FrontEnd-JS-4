@@ -75,9 +75,8 @@
 
 /* 6 */
 
-function postsbyUser(userID){
-    fetch('https://jsonplaceholder.typicode.com/posts')
-        .then(res => {console.log(res),console.log(userID)})
+async function postsbyUser(userID){
+    const result = await fetch('https://jsonplaceholder.typicode.com/posts')
 }
 
 postsbyUser(4)
