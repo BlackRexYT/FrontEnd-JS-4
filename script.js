@@ -63,28 +63,20 @@
 /* 5 */
 
 
-console.log('person1: shows ticket')
-console.log('person2: shows ticket')
+// console.log('person1: shows ticket')
+// console.log('person2: shows ticket')
 
-const promiseWifeTick = new Promise((resolve,reject) => {
-    setTimeout(() => {
-        resolve('ticket')
-    },3000)
-})
+// const preMovie = async () => console.log('premMovie')
 
-const getPopcorn = promiseWifeTick.then((t) => {
-    console.log('husband: we should in')
-    console.log('wife: no hungry')
-    return new Promise((resolve,reject) => resolve(`${t} popcorn`))
-})
+// preMovie().then((m) => console.log(m))
 
-const getButter = promiseWifeTick.then((t) => {
-    console.log('husband: we should in')
-    console.log('wife: no hungry butter')
-    return new Promise((resolve,reject) => resolve(`${t} butter`))
-})
+// console.log('person4: shows ticket')
+// console.log('person5: shows ticket')
 
-getButter.then((t)=> console.log(t))
+/* 6 */
 
-console.log('person4: shows ticket')
-console.log('person5: shows ticket')
+function postsbyUser(userID){
+    console.log(userID)
+}
+postsByUser(4)
+    
