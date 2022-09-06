@@ -13,15 +13,6 @@
 //         ratings += ' .'
 //     }
 //     return ratings
-
-
-
-//     // for (i=0;i<4.5;i++){
-//     //     console.log(i)
-//     // }
-
-
-
 // }
 
 // console.log(showRating(4))
@@ -30,3 +21,19 @@
 /* 2 */
 
 
+// function sortLowToHigh(arr){
+//     return arr.sort((a,b) => a-b);
+// }
+
+// console.log(sortLowToHigh([1,5,0,10,4]))
+
+
+/* 3 */
+
+
+
+function sortHighToLow(arr){
+    return arr.sort((a,b) => b.price - a.price)
+}
+
+console.log(sortHighToLow([{id:1, price:50},{id:2, price:0},{id:3, price:500}]))
